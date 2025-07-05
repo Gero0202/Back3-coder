@@ -1,0 +1,15 @@
+config:
+  target: "http://localhost:8080"
+  phases:
+    - duration: 30
+      arrivalRate: 10
+  defaults:
+    headers:
+      Content-Type: "application/json"
+
+scenarios:
+  - name: Pruebas de carga para /api/pets
+    flow:
+      - get:
+          url: "/api/pets"
+      

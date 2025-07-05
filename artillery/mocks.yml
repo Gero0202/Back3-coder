@@ -1,0 +1,17 @@
+config:
+  target: "http://localhost:8080"
+  phases:
+    - duration: 20
+      arrivalRate: 5
+  defaults:
+    headers:
+      Content-Type: "application/json"
+
+scenarios:
+  - name: Carga sobre rutas de mocks
+    flow:
+      - get:
+          url: "/api/mocks/mockingpets"
+      - get:
+          url: "/api/mocks/mockingusers"
+      
