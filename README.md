@@ -9,7 +9,7 @@ con todas sus respectivas rutas esta disponible a traves de Swagger.
 
 ---
 
-##  Caracteristicas principales
+## ✨ Caracteristicas principales
 
 - Gestion de usuarios: Registro , inicio de sesion y gestion de perfiles de usuarios.
 - Gestion de mascotas: Creacion ( con o sin imagen ), consultas , actualizacion y eliminacion de registro de mascotas.
@@ -66,7 +66,7 @@ con todas sus respectivas rutas esta disponible a traves de Swagger.
 
 ---
 
-## Tecnologias usadas: 
+## 💻 Tecnologias usadas: 
 
 - Frameworks y librerias:
  - Express.js: Framework web para Node.js 
@@ -99,9 +99,9 @@ con todas sus respectivas rutas esta disponible a traves de Swagger.
 - npm run test:sessions  # Test de la carpeta sessions.test.js
 - npm run test:adoptions  # Test de la carpeta adoptions.test.js
 - npm run test:load:pets  # Test con artillery de pets
-- npm run test:load:users  # Test con artillery de pets
-- npm run test:load:mocks  # Test con artillery de pets
-- npm run test:load:adoptions  # Test con artillery de pets
+- npm run test:load:users  # Test con artillery de users
+- npm run test:load:mocks  # Test con artillery de mocks
+- npm run test:load:adoptions  # Test con artillery de adopciones
 
 --- 
 
@@ -109,7 +109,7 @@ con todas sus respectivas rutas esta disponible a traves de Swagger.
 
 Para configurar y ejecutar el proyecto localmente, sigue estos pasos:
 
-- git clone <repo-url>
+- git clone https://github.com/Gero0202/Back3-coder.git
 - cd nombre-del-proyecto
 - npm install
 - Crea un archivo .env en la raíz del proyecto y pega lo siguiente:
@@ -118,7 +118,7 @@ Para configurar y ejecutar el proyecto localmente, sigue estos pasos:
 
 ---
 
-## Instalacion Docker
+## 🐳 Instalacion Docker
 
 - Ver imagen en docker : https://hub.docker.com/r/gerotortosa/proyecto-final-backend/tags
 
