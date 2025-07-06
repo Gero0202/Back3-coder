@@ -64,6 +64,10 @@ con todas sus respectivas rutas esta disponible a traves de Swagger.
 - `/api/mocks/mockingusers`: (GET) Genera 50 usuarios con datos falsos y contraseña encriptada.
 - `/api/mocks/generateData`: (POST) Inserta usuarios y mascotas en la base de datos según parámetros.
 
+#### Documentacion ( Swagger )
+
+- `/api-doc` : Documentacion con Swagger
+
 ---
 
 ## 💻 Tecnologias usadas: 
@@ -87,23 +91,39 @@ con todas sus respectivas rutas esta disponible a traves de Swagger.
 
 --- 
 
+## 🐳 Instalacion Docker
 
-## 🔧 Scripts
+- Ver imagen en docker : https://hub.docker.com/r/gerotortosa/proyecto-final-backend/tags
 
-- npm start     # Inicia el servidor con Node.js
-- npm run dev   # Inicia el servidor con nodemon
-- npm run test  # Hace test de todos los archivos en archivo test
-- npm run test:users  # Test de la carpeta users.test.js
-- npm run test:pets  # Test de la carpeta pets.test.js
-- npm run test:mocks  # Test de la carpeta mocks.test.js
-- npm run test:sessions  # Test de la carpeta sessions.test.js
-- npm run test:adoptions  # Test de la carpeta adoptions.test.js
-- npm run test:load:pets  # Test con artillery de pets
-- npm run test:load:users  # Test con artillery de users
-- npm run test:load:mocks  # Test con artillery de mocks
-- npm run test:load:adoptions  # Test con artillery de adopciones
+- Correr proyecto desde docker:
+   - docker pull gerotortosa/proyecto-final-backend
+   - docker run -p 8080:8080 gerotortosa/proyecto-final-backend
 
---- 
+
+---
+
+## 🐳⚙️ Scripts con Docker
+
+#### 🏗️  Levantar en modo desarrollo
+
+- docker run gerotortosa/proyecto-final-backend npm run dev
+
+#### 🔍 Ejecutar tests individuales
+
+- docker run gerotortosa/proyecto-final-backend npm run test:users
+- docker run gerotortosa/proyecto-final-backend npm run test:adoptions
+- docker run gerotortosa/proyecto-final-backend npm run test:pets
+- docker run gerotortosa/proyecto-final-backend npm run test:mocks
+- docker run gerotortosa/proyecto-final-backend npm run test:sessions
+
+#### 📈 Ejecutar pruebas de carga (Artillery)
+
+- docker run gerotortosa/proyecto-final-backend npm run test:load:users
+- docker run gerotortosa/proyecto-final-backend npm run test:load:adoptions
+- docker run gerotortosa/proyecto-final-backend npm run test:load:pets
+- docker run gerotortosa/proyecto-final-backend npm run test:load:mocks
+
+---
 
 ## 📦 Instalacion 
 
@@ -118,15 +138,22 @@ Para configurar y ejecutar el proyecto localmente, sigue estos pasos:
 
 ---
 
-## 🐳 Instalacion Docker
+## 🔧 Scripts locales
 
-- Ver imagen en docker : https://hub.docker.com/r/gerotortosa/proyecto-final-backend/tags
+- npm start     # Inicia el servidor con Node.js
+- npm run dev   # Inicia el servidor con nodemon
+- npm run test  # Hace test de todos los archivos en archivo test
+- npm run test:users  # Test de la carpeta users.test.js
+- npm run test:pets  # Test de la carpeta pets.test.js
+- npm run test:mocks  # Test de la carpeta mocks.test.js
+- npm run test:sessions  # Test de la carpeta sessions.test.js
+- npm run test:adoptions  # Test de la carpeta adoptions.test.js
+- npm run test:load:pets  # Test con artillery de pets
+- npm run test:load:users  # Test con artillery de users
+- npm run test:load:mocks  # Test con artillery de mocks
+- npm run test:load:adoptions  # Test con artillery de adopciones
 
-- Correr proyecto desde docker:
-   - docker pull gerotortosa/proyecto-final-backend
-   - docker run -p 8080:8080 gerotortosa/proyecto-final-backend
-
-
+---
 
 ## 📌 Autor
 Geronimo Tortosa 
