@@ -106,7 +106,7 @@ con todas sus respectivas rutas esta disponible a traves de Swagger.
 
 #### 🏗️  Levantar en modo desarrollo
 
-- docker run gerotortosa/proyecto-final-backend npm run dev
+- docker run -p 8080:8080 gerotortosa/proyecto-final-backend npm run dev
 
 #### 🔍 Ejecutar tests individuales
 
